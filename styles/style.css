@@ -417,6 +417,21 @@
 .stages__list-slider-img {
   display: none;
 }
+.stages__animation-plane {
+  animation: flyVertical 4s ease-in-out infinite;
+}
+@keyframes flyVertical {
+  0%, 100% {
+    transform: translateY(0);  /* Начальное и конечное положение — без вертикального смещения */
+  }
+  25% {
+    transform: translateY(-10px);  /* Максимальное подъём вверх на 10 пикселей */
+  }
+  50% {
+    transform: translateY(10px);  /* Максимальное подъём вверх на 10 пикселей */
+  }
+}
+
 .stages__slider-btns-block {
   display: none;
 } 
